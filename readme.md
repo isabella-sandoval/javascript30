@@ -1,1 +1,1 @@
-# My go at the Javascript 30 day challenge!
+## My go at the Javascript 30 day challenge!
