@@ -98,10 +98,17 @@
       return alast > blast ? 1 : -1;
 
     })
-    console.log(alpha);
+    // console.log(alpha);
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    const transportation = data.reduce(function(count, item) {
+      count[item] ? count[item]++ : count[item] = 1;
+      return count;
+    },{})
+
+    console.log(transportation)
 
   </script>
 </body>
