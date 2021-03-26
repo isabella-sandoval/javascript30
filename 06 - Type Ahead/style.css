@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: #ffc600;
+  background: linear-gradient(to right, rgba(236, 105, 105, 0.616),rgba(236, 180, 74, 0.445),yellow,rgba(119, 240, 119, 0.534),rgba(167, 79, 230, 0.582),rgba(238, 130, 238, 0.657));
   font-family: 'helvetica neue';
   font-size: 20px;
   font-weight: 200;
@@ -24,7 +24,7 @@ input.search {
   margin: 0;
   text-align: center;
   outline: 0;
-  border: 10px solid #F7F7F7;
+  /* border: 10px solid #F7F7F7; */
   width: 120%;
   left: -10%;
   position: relative;
