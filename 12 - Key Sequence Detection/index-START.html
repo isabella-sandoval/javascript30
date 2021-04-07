@@ -12,15 +12,16 @@
   const secretCode = 'bella'
 
 
-  window.addEventListener('keyup', (e)=>{
+  window.addEventListener('keyup', (e)=> {
     pressed.push(e.key);
-    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length); //-6, 
 
     if(pressed.join('') === secretCode){
       console.log('YOU DID IT');
       cornify_add();
     }
-  })
+  });
+  
 </script>
 </body>
 </html>
