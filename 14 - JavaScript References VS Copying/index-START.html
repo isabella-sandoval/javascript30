@@ -13,11 +13,11 @@
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // and we want to make a copy of it.
-
+    const team = players.slice();
     // You might think we can just do something like this:
 
     // however what happens when we update that array?
-
+    const team2 = [...players]
     // now here is the problem!
 
     // oh no - we have edited the original array too!
@@ -25,7 +25,7 @@
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
     // So, how do we fix this? We take a copy instead!
-
+    
     // one way
 
     // or create a new array and concat the old one in
@@ -43,7 +43,7 @@
     };
 
     // and think we make a copy:
-
+    const personcopy = Object.assign({}, person, {age: 12});
     // how do we take a copy instead?
 
     // We will hopefully soon see the object ...spread
