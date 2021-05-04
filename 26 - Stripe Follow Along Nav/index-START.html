@@ -227,7 +227,7 @@
   function handleEnter(){
     this.classList.add('trigger-enter');
     setTimeout(() => {
-      this.classList.add('trigger-enter-active')
+      this.classList.add('trigger-enter-active') && this.classList.add('trigger-enter-active')
     }, 150);
     const dropdown = this.querySelector('.dropdown');
 
